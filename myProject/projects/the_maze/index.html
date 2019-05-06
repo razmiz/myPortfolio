@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style/theMaze.css">
+    <title>The Maze</title>
+</head>
+
+<body>
+    <div id="header">
+        <a href="../../index.html"><img src="images/R.P.N.png" id="logo" title="R.Projects" alt="R.Projects"></a>
+    </div>
+    <div id="mainSection"></div>
+    <div id="score"></div>
+    <button id="saveScoreButton" onclick="saveScore()"> שמור תוצאה</button>
+    <div id="timer"></div>
+    <button id="instructionButton"><i id="iconTeacher" class="fas fa-chalkboard-teacher"></i>הוראות</button>
+    <div id="highScores">
+        <table>
+            <thead>
+                <tr>
+                    <td>תוצאה</td>
+                    <td>שם</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="2">אין תוצאות </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script/theMaze.js"></script>
+</body>
+</html>

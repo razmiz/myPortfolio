@@ -1,0 +1,147 @@
+@font-face {
+font-family: "TsMatka";
+src: url("../fonts/Ts Matka/TsMatka-Regular.ttf");
+}
+@font-face {
+font-family: "Rubik";
+src: url("../fonts/Rubik/Rubik-Regular.ttf");
+}
+@font-face {
+font-family: "Skechers";
+src: url("../fonts/SkechersFont/Skechers.ttf");
+}
+@font-face {
+font-family: "MrChalk";
+src: url("../fonts/SkechersFont/MrChalk.otf");
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    background-image: url('../images/chalkBoard.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header img{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 18%;
+    z-index: 1;
+}
+
+.centerMath {
+    direction: rtl;
+    text-align: center;
+    font-family: arial;
+    font-size: 18px;
+}
+
+.mainPage{
+    margin-top: 1%;
+    background-color: #bcbdbdcd;
+    border-radius: 10%;
+}
+
+.mainPage h1{
+    font-size: 90px;
+    font-family: "TsMatka";
+    margin: 20px;
+    color:#215a8c;
+}
+
+#userMessage{
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+#userMessage2{
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+#fullBody{
+    direction: ltr;
+    display: none; 
+}
+
+#left{
+    height:60%;
+}
+
+h2{
+    color: #131394;
+    text-align: right;
+    font-family: "Rubik";
+    margin-right: 50px;
+}
+
+.mathEx{
+    direction: ltr;
+}
+
+input[type=number]{
+    width: 100px;
+}
+
+input:hover{
+    box-shadow: 3px 3px 5px black;
+}
+
+button{
+    font-family: "Rubik";
+    font-size: 17px;
+}
+
+#mainEasy, #mainAdvance{
+    display: none;
+    padding: 20px;
+}
+
+.btnChoose{
+    height: 40px;
+    width: 160px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+    box-shadow: 3px 3px 5px black;
+    border-radius: 15px;
+}
+
+.btnChoose:active{
+    box-shadow: inset 3px 3px 5px black;
+}
+
+.btns:hover{
+    box-shadow: 3px 3px 5px black;
+}
+
+#calDiv{
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+#score{
+    color: white;
+    padding-top: 150px;
+    font-size: 45px;
+    font-family: Skechers ;   
+}
+
+#plusFont{
+    font-family: MrChalk;
+}
+
+.changeColor{
+    animation: change-size 2s ease;
+    color: gold;
+}
+
+@keyframes change-size {
+    0% {font-size: 40px;}
+    50% {font-size: 70px;}
+    100%{font-size: 5px;}
+}

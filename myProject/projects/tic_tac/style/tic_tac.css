@@ -1,0 +1,121 @@
+html{
+    height: 100%;
+}
+
+body{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('../images/tic_background.png');
+    background-color: #e2e1dc;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+header img{
+    height: 60px;
+    margin-top: 10px;
+}
+
+.row1, .row2, .row3{
+    font-size: 0;
+}
+
+.column{
+    display: inline-block;
+    margin:0;
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+    font-size: 80px;
+    line-height: 100px;
+    vertical-align: top;
+}
+
+#current{
+    color:#fffefe;
+    text-shadow: 1px 1px 1px black;
+    direction: rtl;
+    text-align: center;
+    font-size: 25px;
+}
+
+#winner{
+    color:#fffefe;
+    text-shadow: 1px 1px 1px black;
+    font-size: 25px;
+    text-align: center;
+}
+
+#mainGame{
+    margin: 0 auto;
+    width: 310px;
+    position: relative;
+    margin-top: 20px;
+}
+
+#alertMessage{
+    display: none;
+    height: 150px;
+    width: 200px;
+    background-color: #eeeeeee0;
+    position: absolute;
+    top: 20%;
+    left: 18%;
+    font-size: 30px;
+    direction: rtl;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px black;
+}
+
+button{
+    font-size: 20px;
+    box-shadow: 1px 1px 3px black;
+}
+button:hover{
+    background-color: #d3d0d0e0;
+}
+
+#disableGame{
+    display: none;
+    position: absolute;
+    top: 0;
+    height:310px;
+    width: 310px;
+    background-color:transparent;
+}
+
+#chooseGame{
+    position: absolute;
+    top: 0;
+    height:310px;
+    width: 310px;
+    background-color: #3b3b3bb7;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    direction: rtl;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
+#chooseGame h2{
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+#chooseGame input{
+    vertical-align: middle;
+}
+
+#chooseGame label{
+    cursor: pointer;
+}
+
+#chooseGame label:hover{
+    text-decoration: underline;
+    color: #aaaaaa;
+}

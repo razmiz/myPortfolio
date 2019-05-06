@@ -1,0 +1,167 @@
+html{
+    height: 100%;
+}
+
+body{
+    direction: rtl;
+    text-align: right;
+    background-image: url(../images/purpleBackground2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#navbar{
+    text-align: left;
+}
+
+#navbar img{
+    position: relative;
+    top: 8px;
+    left: 10px;
+    width: 20%; 
+    z-index: 500;
+}
+ 
+label{
+    margin: 0 20px ;
+    margin-top: 20px;
+}
+
+uBackgroundColor{
+    appearance: color-well;
+}
+
+-webkit-input-placeholder { 
+      color: pink;
+}
+
+#fontSize{
+    margin: 0 ;
+    margin-top: 0;
+}
+
+#mainBox{
+    background-color: #eee;
+    margin: 10px 0 auto;
+    text-align: center;
+}
+
+#myBox{
+    padding: 10px;
+    padding-top: 80px;
+    margin: 0 auto;
+    margin-top: 5px;
+    height: 400px;
+    width: 400px;
+    background-color: transparent;
+    transition: 2s;
+    border: 1px solid black;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+#headerBox{
+    position: absolute;
+    top: 20px;
+    right: 100px;
+    padding: 5px;
+    margin: 0 auto;
+    width: 250px; 
+    height: 50px; 
+    background-color: transparent;
+    transition: 2s;
+    z-index: 1000;
+}
+
+button{
+    box-shadow: 3px 3px 5px black;
+    margin-right: 30px;
+    margin-top:10px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+}
+
+button:active{
+    box-shadow: inset 3px 3px 5px black;
+}
+
+span{
+    display: inline-block;
+}
+
+.form-control{
+    width: 100px;
+}
+
+#background6 {
+    margin: 0;
+    width: 100px;
+    height: 50px;
+    background-image: url(../backgrounds/background6.jpg);
+    background-size: 100%;
+}
+
+#background3 {
+    width: 100px;
+    height: 50px;
+    background-image: url(../backgrounds/background3.jpg);
+    background-size: 100%;
+}
+
+#background4 {
+    width: 100px;
+    height: 50px;
+    background-image: url(../backgrounds/background4.jpg);
+    background-size: 100%;
+}
+
+#background5 {
+    width: 100px;
+    height: 50px;
+    background-image: url(../backgrounds/background5.jpg);
+    background-size: 100%;
+}
+
+ #background7 {
+    width: 100px;
+    height: 50px;
+    background-image: url(../backgrounds/background7.jpg);
+    background-size: 100%;
+}   
+
+#background8 {
+    width: 100px;
+    height: 50px;
+    background-image: url(../backgrounds/background8.jpg);
+    background-size: 100%;
+}  
+#background9 {
+    width: 100px;
+    height: 50px;
+    background-image: url(../backgrounds/background9.jpg);
+    background-size: 100%;
+}   
+#noBackground {
+    width: 100px;
+    height: 50px;
+}    
+
+#chooseBackground{
+    display: none;
+}
+
+#chooseBackground button{
+    padding: 0;
+}
+
+#clickToChoose{
+    cursor: pointer;
+}
+
+#clickToChoose:hover{
+    box-shadow: 1px 1px 3px black;
+}
+
+#clickToChoose:active{
+    box-shadow: inset 1px 1px 3px black;
+}

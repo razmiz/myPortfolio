@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <link rel="shortcut icon" src="favicon.ico">
+    <link rel="stylesheet" href="style/pizza.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>הזמנת פיצה</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3"><a href="../../index.html"><img src="images/R.P.B.png" id="logo" title="R.Projects" alt="R.Projects"></a></div>
+                <div class="col-md-6">
+                    <h1>טופס הזמנת פיצה</h1>
+                </div>
+                <div class="col-md-3"><img src="images/pizza-chef.png" id="chef"></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <form autocomplete="off">
+                        <div class="form form-group">
+                            <label>שם: <input type="text" class="form-control" placeholder="שם פרטי" name="uName" id="uName"></label>
+                            <label>משפחה: <input type="text" class="form-control" placeholder="שם משפחה" name="uLastName"
+                                    id="uLastName"></label>
+                        </div>
+                        <div class="form">
+                            <label class="del" onclick="showAdress()"><input type="radio" name="pickOrDel" value="delivery"
+                                    id="delivery">
+                                משלוח לבית</label>
+                            <label class="del" onclick="hideAdress()"><input type="radio" name="pickOrDel" value="Pick"
+                                    id="pick">
+                                איסוף עצמי</label>
+                            <span id="mustChoose">נא לבחור משלוח או איסוף עצמי</span>
+                        </div>
+                        <div class="form form-group" id="address">
+                            <label class="formAdress">כתובת למשלוח: <input type="text" class="form-control " name="street"
+                                    id="street" placeholder="רחוב"></label>
+                            <label class="formAdress">עיר: <input type="text" class="form-control " name="city" id="city"
+                                    placeholder="עיר"></label>
+                        </div>
+                        <div class="form">
+                            <label>גודל פיצה:
+                                <select name="pizzaSize" id="pizzaSize">
+                                    <option value="small">S</option>
+                                    <option value="Medium">M</option>
+                                    <option value="Large">L</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="form tosafotInline">
+                            תוספות:
+                            <label class="tosafot"> <input type="checkbox" id="cheeseCheckbox" value="xtraCheese " name="addOn">
+                                אקסטרה גבינה</label>
+                            <label class="tosafot"> <input type="checkbox" id="greenOlivesCheckbox" value="greenOlives "
+                                    name="addOn">
+                                זיתים ירוקים</label>
+                            <label class="tosafot"> <input type="checkbox" id="blackOlivesCheckbox" value="blackOlives "
+                                    name="addOn">
+                                זיתים שחורים</label>
+                            <label class="tosafot"> <input type="checkbox" id="cornCheckbox" value="corn " name="addOn">
+                                תירס</label>
+                            <label class="tosafot"> <input type="checkbox" id="bulgaritCheckbox" value="bulgarit " name="addOn">
+                                בולגרית</label>
+                            <label class="tosafot"> <input type="checkbox" id="tomatoesCheckbox" value="tomatoes " name="addOn">
+                                עגבניות</label>
+                            <label class="tosafot"> <input type="checkbox" id="onionCheckbox" value="onion " name="addOn">
+                                בצל</label>
+                        </div>
+                        <div class="form">
+                        </div>
+                        <div id="sendInput"><input type="submit" value="הזמן" id="send"></div>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <div id="roundPizza">
+                        <img src="images/roundPizza.png" id="basePizza" class="pizzaImages">
+                        <img src="images/black_olives.png" id="blackOlives" class="pizzaImages">
+                        <img src="images/greenOlives.png" id="greenOlives" class="pizzaImages">
+                        <img src="images/bulgarit.png" id="bulgarit" class="pizzaImages">
+                        <img src="images/onion.png" id="onion" class="pizzaImages">
+                        <img src="images/corn.png" id="corn" class="pizzaImages">
+                        <img src="images/tomatoes.png" id="tomatoes" class="pizzaImages">
+                        <img src="images/xtraCheese.png" id="xtraCheese" class="pizzaImages">
+                    </div>
+                </div>
+                <div id="messageForUser"></div>
+            </div>
+        </div>
+    </main>
+    <div class="container">
+        <br><br><button id="showButton">מעקב הזמנות</button>
+        <br><br>
+        <label class="findOrderRadio"><input type="radio" name="findOrder" value="savedNumber" onclick="savedNumber()">
+            יש לי מספר הזמנה </label><br>
+        <label class="findOrderRadio"><input type="radio" name="findOrder" value="lastOrder" onclick="showLastOrder()">
+            הצג הזמנה אחרונה</label>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <table id="ordersTable">
+                    <thead>
+                        <tr>
+                            <td>מספר הזמנה</td>
+                            <td>שם פרטי</td>
+                            <td>שם משפחה</td>
+                            <td>איסוף/משלוח</td>
+                            <td>רחוב</td>
+                            <td>עיר</td>
+                            <td>גודל פיצה</td>
+                            <td>תוספות</td>
+                        </tr>
+                    </thead>
+                    <tbody id="userTable"></tbody>
+                </table>
+                <div id="deleteDiv"><label>מחיקת הזמנה: <input id="userOrderNumberToDelete" type="number" placeholder=" מספר הזמנה למחיקה">
+                        <button onclick="deleteOrder()">מחק הזמנה</button></label>
+                    <br><br><br>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script/pizza.js"></script>
+
+</html>

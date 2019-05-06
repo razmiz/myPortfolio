@@ -1,0 +1,191 @@
+@font-face {
+    font-family: "digital7";
+    src: url("../fonts/digital-7.(mono).ttf");
+}
+
+body {
+    background-color: #eeeeee;
+    background-image: url('../images/blue.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+header img{
+    width: 20%;
+}
+
+#fullBody {
+    margin: 0 auto;
+    background-color: #0479a4;
+    height: 500px;
+    width: 300px;
+    position: relative;
+    top: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px black;
+    transition: 0.5s;
+}
+
+#screen {
+    background-color: white;
+    height: 45px;
+    line-height: 50px;
+    width: 255px;
+    padding: 3px;
+    border: 1px solid black;
+    position: absolute;
+    top: 3%;
+    left: 6%;
+    border-radius: 10px;
+    text-align: right;
+    font-size: 55px;
+    font-family: "digital7";
+}
+
+
+.button {
+    height: 58px;
+    line-height: 58px;
+    width: 58px;
+    background-color: rgb(220, 216, 197);
+    border: 1px solid black;
+    font-size: 40px;
+    text-align: center;
+    position: absolute;
+    right: 10px;
+    top: 24%;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+}
+
+.button#equal {
+    background-color: #c1bebe;
+    width: 270px;
+    right: 5%;
+}
+
+.button#clear {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 30px;
+    top: 15%;
+    left: 5%;
+}
+
+#plus {
+    margin-top: 5px;
+}
+
+#minus {
+    margin-top: 85px;
+}
+
+#multiple {
+    margin-top: 165px;
+}
+
+#divide {
+    margin-top: 245px;
+}
+
+#equal {
+    margin-top: 315px;
+}
+
+.row1,
+.row2,
+.row3,
+.row4 {
+    position: absolute;
+    height: 70px;
+    width: 200px;
+    margin-left: 20px;
+}
+
+.row1 {
+    margin-top: 110px;
+}
+
+.row2 {
+    margin-top: 190px;
+}
+
+.row3 {
+    margin-top: 270px;
+}
+
+.row4 {
+    margin-top: 350px;
+}
+
+.numbers {
+    height: 60px;
+    line-height: 60px;
+    width: 60px;
+    background-color: #c1bebe;
+    border: 1px solid black;
+    font-size: 50px;
+    text-align: center;
+    position: absolute;
+    right: 10px;
+    top: 20%;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+
+}
+
+#number0 {
+    width: 130px;
+    margin-right: 0px;
+}
+
+#number3 {
+    margin-right: 0px;
+}
+
+#number2 {
+    margin-right: 70px;
+}
+
+#number1 {
+    margin-right: 140px;
+}
+
+#number6 {
+    margin-right: 0px;
+}
+
+#number5 {
+    margin-right: 70px;
+}
+
+#number4 {
+    margin-right: 140px;
+}
+
+#number9 {
+    margin-right: 0px;
+}
+
+#number8 {
+    margin-right: 70px;
+}
+
+#number7 {
+    margin-right: 140px;
+}
+
+#numberPoint {
+    margin-right: 140px;
+}
+
+.btn {
+    cursor: pointer;
+    box-shadow: 1px 1px 5px black;
+}
+
+.btn:active {
+    box-shadow: inset 1px 1px 5px black;
+}

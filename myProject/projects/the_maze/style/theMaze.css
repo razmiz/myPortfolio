@@ -1,0 +1,218 @@
+@font-face{
+    font-family: "digital7";
+    src: url("../fonts/digital-7.regular.ttf");
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    text-align: center;
+    background-image: url('../images/background.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#header img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 25%;
+}
+
+table {
+    border-spacing: 0;
+}
+
+td{
+    margin: 0;
+    padding: 0;
+}
+
+tr{
+    margin: 0;
+    padding: 0;
+}
+
+#mainSection{
+    display: inline;
+}
+
+table{
+    margin: 0 auto;
+    margin-top: 25px;
+    position: relative;
+}
+
+#score{
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 135px;
+    background-color: #eee;
+    font-size: 30px;
+    border-radius: 1px;
+    text-align: center;
+    font-family: arial;
+    box-shadow: 1px 1px 2px black;
+}
+
+#alert{
+    display: inline-block;
+    position: absolute;
+    top: 150px;
+    margin-left: -150px; 
+    width: 300px;
+    height: 200px;
+    background-color: #bab7b7ee;
+    border-radius: 5px;
+}
+
+#alert button{
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#alert button:hover{
+    box-shadow: 1px 1px 2px black;
+}
+
+.square{
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.fa-sign-out-alt{
+    font-size: 50px;
+}
+
+.backgroundDivs{
+    background-color: #3ebfe7;
+}
+
+.backgroundDivs:hover{
+    background-color: #1c0bb1;
+}
+
+.black{
+    cursor: pointer;
+    background-color: #121212;
+}
+
+.black:hover{
+    background-color: #1212125a;
+}
+
+.gold{
+    background-color: gold;
+}
+
+.gold:hover{
+    background-color: #ffd90035;
+}
+
+.red{
+    background-color: red;
+}
+
+.red:hover{
+    background-color: #ff000062;
+}
+
+#t{
+    height: 100px;
+    width: 100px;
+}
+
+#timer{
+    font-size: 40px;
+    font-family: "digital7";
+    margin: 0 auto;
+    margin-top: 10px;
+    height: 40px;
+    line-height: 45px;
+    width: 100px;
+    background-color: #eee;
+    box-shadow: 1px 1px 2px black;
+}
+
+@keyframes change-background{
+    0% {
+        background: #3ebfe7;
+    }
+
+    25% {
+        background: #222020;
+    }
+
+    50% {
+        background: #3ebfe7;
+    }
+
+    75% {
+        background: #222020;
+    }
+
+    100% {
+        background: #3ebfe7;
+    }
+}
+
+#instructionButton{
+    cursor: pointer;
+    position: relative;
+    bottom: 600px;
+    left: 450px; 
+    height: 50px;
+    width: 100px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+#instructionButton:hover{
+    box-shadow: 1px 1px 2px black;
+}
+
+#iconTeacher{
+    font-size: 20px;
+}
+
+#highScores{
+    display: inline-block;
+    position: relative;
+    bottom: 550px;
+    right: 450px;
+    width: 150px;
+    height: 150px;;   
+}
+
+#highScores table{
+    width: 100%;
+    font-size: 20px;
+}
+
+#highScores thead{
+    font-weight: bold;
+}
+
+#highScores table, #highScores td{
+    border: 1px solid white;
+}
+
+#saveScoreButton{
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#saveScoreButton:hover{
+    box-shadow: 1px 1px 2px black;
+}

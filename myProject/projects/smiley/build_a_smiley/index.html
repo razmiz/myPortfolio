@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/smiley.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Build a Smiley</title>
+</head>
+
+<body>
+    <header>
+        <a href="../../../index.html" target="_blank"><img src="images/R.P.B.png" id="logo" alt="R.Projects" title="R.Projects"></a>
+    </header>
+
+    <div id="bigCircle">
+        <button id="instructions">מה עושים?</button>
+        <div id="stickyNote">
+            <span>גרור כל אחד מהאיורים אל מיקומו בעיגול כדי ליצור את הסמיילי </span>
+            <div>🙂</div>
+        </div>
+        <div id="leftEyeSpot" class="droptarget droptargetEye"></div>
+        <div id="rightEyeSpot" class="droptarget droptargetEye"></div>
+        <div id="mouthSpot" class="droptarget droptargetMouth"></div>
+    </div>
+
+
+    <div class="sideBar">
+        <div id="insideLeftEye" class="insideEye" draggable="true"></div>
+    </div>
+    <div class="sideBar">
+        <div id="insideRightEye" class="insideEye" draggable="true"></div>
+    </div>
+    <div class="sideBar">
+        <div id="tongueHolder">
+            <div id="tongue" draggable="true"></div>
+        </div>
+    </div>
+    <div class="sideBar">
+        <div class="eyes" id="leftEye" draggable="true">
+            <div class="droptarget droptargetEye"></div>
+        </div>
+    </div>
+    <div class="sideBar">
+        <div class="eyes" id="rightEye" draggable="true">
+            <div class="droptarget droptargetEye"></div>
+        </div>
+    </div>
+    <div class="sideBar sideBarMouth">
+        <div id="mouth" draggable="true">
+            <div class="droptarget droptargetMouth"></div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script/smiley.js"></script>
+</body>
+
+</html>

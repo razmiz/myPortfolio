@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+                crossorigin="anonymous">
+        <link rel="stylesheet" href="style/piano.css">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <title>Piano+ Sound</title>
+</head>
+
+<body>
+        <div id="header">
+                <a href="../../index.html"><img src="images/R.P.B.png" alt="R.Projects" title="R.Projects"></a>
+        </div>
+        <div id="onPiano">
+                <img src="images/dancing.gif" alt="Dancing Bears" width="250px">
+        </div>
+        <div id="bigBox">
+                <div class="whiteKey keys" id="1C" onclick="playSound('1C')">
+                        <div class="tooltip">
+                                <div id="text">דו (C)</div>
+                                <div class="arrowUp"></div>
+                        </div>
+                </div>
+                <div class="whiteKey keys" id="2D" onclick="playSound('2D')">
+                        <div class="tooltip">
+                                <div id="text">רה (D)</div>
+                                <div class="arrowUp"></div>
+                        </div>
+                </div>
+                <div class="whiteKey keys" id="3E" onclick="playSound('3E')">
+                        <div class="tooltip">
+                                <div id="text">מי (E)</div>
+                                <div class="arrowUp"></div>
+                        </div>
+                </div>
+                <div class="whiteKey keys" id="4F" onclick="playSound('4F')">
+                        <div class="tooltip">
+                                <div id="text">פה (F)</div>
+                                <div class="arrowUp"></div>
+                        </div>
+                </div>
+                <div class="whiteKey keys" id="5G" onclick="playSound('5G')">
+                        <div class="tooltip">
+                                <div id="text">סול (G)</div>
+                                <div class="arrowUp"></div>
+                        </div>
+                </div>
+                <div class="whiteKey keys" id="6A" onclick="playSound('6A')">
+                        <div class="tooltip">
+                                <div id="text">לה (A)</div>
+                                <div class="arrowUp"></div>
+                        </div>
+                </div>
+                <div class="whiteKey keys" id="7B" onclick="playSound('7B')">
+                        <div class="tooltip">
+                                <div id="text">סי (B)</div>
+                                <div class="arrowUp"></div>
+                        </div>
+                </div>
+                <div class="whiteKey keys" id="8C" onclick="playSound('8C')">
+                        <div class="tooltip">
+                                <div id="text">דו (C)</div>
+                                <div class="arrowUp"></div>
+                        </div>
+                </div>
+                <div class="whiteKey keys" id="9D" onclick="playSound('9D')">
+                        <div class="tooltip">
+                                <div id="text">רה(D)</div>
+                                <div class="arrowUp"></div>
+                        </div>
+                </div>
+                <div class="whiteKey keys" id="10E" onclick="playSound('10E')">
+                        <div class="tooltip">
+                                <div id="text">מי(E)</div>
+                                <div class="arrowUp"></div>
+                        </div>
+                </div>
+                <!-- set black keys: -->
+                <div class="blackKey blackKey1 keys" id="1Cs" onclick="playSound('1Cs')">
+                        <div class="tooltip">דו דיאז (♯C)
+                                <div class="arrowUp"></div>
+                        </div>
+                </div>
+                <div class="blackKey blackKey2 keys" id="2Ds" onclick="playSound('2Ds')">
+                        <div class="tooltip">מי במול (♭E)
+                                <div class="arrowUp"></div>
+                        </div>
+                </div>
+                <div class="blackKey blackKey3 keys" id="4Fs" onclick="playSound('4Fs')">
+                        <div class="tooltip">פה דיאז (♯F)
+                                <div class="arrowUp"></div>
+                        </div>
+                </div>
+                <div class="blackKey blackKey4 keys" id="5Gs" onclick="playSound('5Gs')">
+                        <div class="tooltip">סול דיאז (♯G)
+                                <div class="arrowUp"></div>
+                        </div>
+                </div>
+                <div class="blackKey blackKey5 keys" id="6As" onclick="playSound('6As')">
+                        <div class="tooltip">סי במול (♭B)
+                                <div class="arrowUp"></div>
+                        </div>
+                </div>
+                <div class="blackKey blackKey6 keys" id="8Cs" onclick="playSound('8Cs')">
+                        <div class="tooltip">דו דיאז (♯C)
+                                <div class="arrowUp"></div>
+                        </div>
+                </div>
+                <div class="blackKey blackKey7 keys" id="9Ds" onclick="playSound('9Ds')">
+                        <div class="tooltip">מי במול (♭E)
+                                <div class="arrowUp"></div>
+                        </div>
+                </div>
+        </div>
+
+        <div id="underPiano">
+                <div class="buttonsUnderPiano">
+                        <span>דו רה מי </span>
+                        <button onclick="autoPlay(simple,500)"><i class="fas fa-music"></i></button>
+                </div>
+                <div class="buttonsUnderPiano">
+                        <span>יונתן הקטן</span>
+                        <button onclick="autoPlay(yonatan,500)"><i class="fas fa-music"></i></button>
+                </div>
+                <div class="buttonsUnderPiano">
+                        <span>Für Elise </span>
+                        <button onclick="autoPlay(furElise,400)"><i class="fas fa-music"></i></button>
+                </div>
+                <div class="buttonsUnderPiano">
+                        <span>Toy </span>
+                        <button onclick="autoPlay(toy,300)"><i class="fas fa-music"></i></button>
+                </div>
+                <div class="buttonsUnderPiano">
+                        <span id="recordSpan">הקלטה</span>
+                        <button onclick="userRecord()"> <i class="fas fa-compact-disc" id="recordIcon"></i></button>
+                </div>
+                <div class="buttonsUnderPiano">
+                        <span>השמע הקלטה</span>
+                        <button onclick="playUserRecord()"> <i class="fas fa-play-circle"></i></button>
+                </div>
+                <div class="buttonsUnderPiano">
+                        <span>עצור נגינה</span>
+                        <button onclick="stopMusic()"><i class="fas fa-hand-paper"></i></button>
+                </div>
+        </div>
+        <script src="script/piano.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/calculator.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <header>
+        <a href="../../index.html"><img src="images/R.P.B.png" alt="R.Projects" title="R.Projects"></a>
+    </header>
+
+    <div id="fullBody">
+        <div id="screen"></div>
+        <div class="button btn" id="plus" onclick="ClickOperator('+')"><i class="fas fa-plus"></i></div>
+        <div class="button btn" id="minus" onclick="ClickOperator('-')"><i class="fas fa-minus"></i></div>
+        <div class="button btn" id="multiple" onclick="ClickOperator('*')"><i class="fas fa-times"></i></div>
+        <div class="button btn" id="divide" onclick="ClickOperator('/')"><i class="fas fa-divide"></i></div>
+        <div class="button btn" id="clear" onclick="ClearScreen()" title="clear"><i class="fas fa-calculator"></i></div>
+        <div class="button btn" id="equal" onclick="showResult()"><i class="fas fa-equals"></i></div>
+
+        <div class="row1">
+            <div class="numbers btn" id="number1" onclick="click1(1)">1</div>
+            <div class="numbers btn" id="number2" onclick="click1(2)">2</div>
+            <div class="numbers btn" id="number3" onclick="click1(3)">3</div>
+        </div>
+        <div class="row2">
+            <div class="numbers btn" id="number4" onclick="click1(4)">4</div>
+            <div class="numbers btn" id="number5" onclick="click1(5)">5</div>
+            <div class="numbers btn" id="number6" onclick="click1(6)">6</div>
+        </div>
+        <div class="row3">
+            <div class="numbers btn" id="number7" onclick="click1(7)">7</div>
+            <div class="numbers btn" id="number8" onclick="click1(8)">8</div>
+            <div class="numbers btn" id="number9" onclick="click1(9)">9</div>
+        </div>
+        <div class="row4">
+            <div class="numbers btn" id="number0" onclick="click1(0)">0</div>
+            <div class="numbers btn" id="numberPoint" onclick="click1('.')">.</div>
+        </div>
+    </div>
+</body>
+<script src="script/calculator.js"></script>
+
+</html>

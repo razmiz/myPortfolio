@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style/tic_tac.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Tic Tac</title>
+</head>
+<body>
+    <header>
+        <a href="../../index.html"><img src="images/R.P.B.png" alt="R.Projects" title="R.Projects"></a>
+    </header>
+
+    <div id="mainGame">
+        <div id="disableGame"></div>
+        <div id="chooseGame">
+            <h2>בחר סוג משחק:</h3>
+                <label> <input type="radio" name="chooseGame" value="player" onclick="hidePlayerSelection()"> שחקן מול
+                    שחקן <i class="fas fa-child"></i></label>
+                <label> <input type="radio" name="chooseGame" value="pc" onclick="hidePlayerSelection()"> שחקן מול מחשב  <i class="fas fa-desktop"></i></label>
+        </div>
+        <div class="row1">
+            <div class="column square" id="s1-1"></div>
+            <div class="column square" id="s1-2"></div>
+            <div class="column square" id="s1-3"></div>
+        </div>
+        <div class="row2">
+            <div class="column square" id="s2-1"></div>
+            <div class="column square" id="s2-2"></div>
+            <div class="column square" id="s2-3"></div>
+        </div>
+        <div class="row3">
+            <div class="column square" id="s3-1"></div>
+            <div class="column square" id="s3-2"></div>
+            <div class="column square" id="s3-3"></div>
+        </div>
+        <div id="alertMessage"></div>
+    </div>
+    <div id="current"></div>
+    <div id="winner"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="script/tic_tac.js"></script>
+</body>
+
+</html>

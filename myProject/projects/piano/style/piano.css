@@ -1,0 +1,224 @@
+body{
+    background-image: url(../images/notes.jpg);
+    background-repeat: repeat;
+    padding: 0;
+}
+
+#header img{
+    background-color: #ffffff;
+    width: 20%;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    z-index: 1;
+}
+
+#bigBox{
+    width: 1020px;
+    height: 350px;
+    background-color: #eee;
+    margin: -15px auto;
+    border: 5px solid gray;
+    font-size: 0;
+    box-shadow: 10px 10px 20px #b0afaf;
+    position: relative;
+}
+
+.whiteKey{
+    cursor: pointer;
+    width: 100px;
+    height: 349px;
+    background-color: white;
+    border: 1px solid black;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    box-shadow: inset 0px 0px 10px white;
+    background: linear-gradient(to right, white, white, white, white, white, white, white, white, black);
+}
+
+.whiteKey:active{
+    box-shadow: inset 5px 5px 100px #b8b3b3;
+    background-color: #e6e6e6;
+    transition: 0.2s;
+}
+
+.whiteKey:hover > .tooltip{
+    display: block;
+}
+
+.blackKey{
+    width: 70px;
+    height: 185px;
+    box-shadow: inset 0px 0px 10px black;
+    background: linear-gradient(to right, black, black, black, white);
+    transition: 0.5s;
+    cursor: pointer;
+    position: absolute;
+    top: 0%;
+    background-color: black;
+    border: 1px solid black;
+}
+
+.blackKey1{
+    bottom: 162px;
+    left: 65px;
+}
+
+.blackKey2{
+    bottom: 162px;
+    left: 170px;
+}
+
+.blackKey3{
+    bottom: 162px;
+    left: 375px;
+}
+
+.blackKey4{
+    bottom: 162px;
+    left: 475px;    
+}
+
+.blackKey5{
+    bottom: 162px;
+    left: 575px;
+}
+
+.blackKey6{
+    bottom: 162px;
+    left: 780px;
+}
+
+.blackKey7{
+    bottom: 162px;
+    left: 885px;
+}
+
+.blackKey:active{
+    box-shadow: inset 6px 6px 8px black;
+    background: linear-gradient(to right, black, black, black, white);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.blackKey:hover > .tooltip{
+    display: block;
+}
+
+.active{
+    box-shadow: inset 0px 0px 10px black;
+    background: linear-gradient(to right, #9f2f2f, #9f2f2f, #9f2f2f, white);
+}
+
+.tooltip {
+    display: none;
+    width: 100px;
+    height: 40px;
+    margin: 50px auto 0 auto;
+    background-color: #94ce38;
+    position: absolute;
+    top: 90%;
+    box-shadow: 5px 5px 10px black;
+    border: 1px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    direction: rtl;
+    font-size: 17px;
+    text-align: center;
+    line-height: 40px;
+    z-index: 1000;
+}
+
+.arrowUp {
+    display: block;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    bottom: 100%;
+    left: 20%;
+    border-bottom: 30px solid #94ce38;
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+}
+
+#onPiano{
+    width: 1020px;
+    text-align: right;
+    margin: 5px auto 6px;
+    position: relative;
+    background-color: transparent;
+}
+
+#onPiano img{
+    width: 100px;
+}
+
+#underPiano{
+    width: 1000px;
+    height: 80px;
+    background-color: #c6c4c4;
+    margin: 0 auto;
+    margin-top: 30px;
+    font-size: 0;
+    z-index: 100;
+    box-shadow: 10px 10px 10px #807e7e;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+    padding-top: 10px;
+    box-sizing: border-box;
+    direction: rtl;
+}
+
+#underPiano .buttonsUnderPiano {
+    display: inline-block;
+    margin-left: 50px;  
+}
+
+.tempoButton{
+    display: inline-block;
+}
+
+#underPiano button{
+    cursor: pointer;
+    background-color: #3a3a3a;
+    border-radius: 10px;
+    width: 80px;
+    height: 25px;
+    box-shadow:  3px 3px 5px black;
+    border: 1px solid black;
+    color: white;
+    font-size: 16px;
+}
+
+#underPiano button:active{
+    box-shadow: inset 3px 3px 5px black;
+}
+
+#underPiano span{
+    margin-bottom: 10px;
+    display: block;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.fa-play-circle, .fa-play-circle{
+    color: #12de3eb3;
+}
+
+.fa-hand-paper{
+    color: #ed5a5a;
+}
+
+.fa-compact-disc{
+    color: gold;
+}
+
+.fa-music{
+    color: #419ff2;
+}
